@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    background-color: aqua;
+    padding: 10px;
+}
+
+div.first {
+    opacity: 0.1;
+    margin-top: 300px;
+}
+
+div.second {
+    opacity: o.3;
+}
+
+div.third {
+    opacity: 0.6;
+}
+
+div.fourth {
+    opacity: 1;
+    background-color: aquamarine;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+<div style="position: static; background:ghostwhite;padding:10px;">Static position (default)</div>
+
+<div style="position: relative; top: 600; left: 500px; background-color: blueviolet; padding: 10px;z-index: 10;">Relative position (moved 120px down and 100px right)</div>
+
+<div style="position: relative; width: 300px; height: 200px; background-color: cyan; margin-top: 100px;">
+<div style="position: absolute; top: 50px; left: 0px; background-color: pink; padding: 10px;">Absolute inside Relative</div>
+</div>
+
+<div style="position: fixed; bottom: 10px; right: 10px; background-color: chocolate; padding: 10px;">Fixed position (always visible)</div>
+
+<h2 style="position: sticky; top: 0px; background-color: yellow; padding: 10px;">Sticky Header</h2>
+<p>Scroll down to see sticky effect</p>
+
+<h1>The opacity property</h1>
+
+<p>This is how this property looks like:</p>
+<div class="first">
+<p>Opacity 0.1</p>
+</div>
+<div class="second">
+<p>Opacity 0.3</p>
+</div>
+<div class="third">
+<p>Opacity 0.6</p>
+</div>
+<div class="fourth">
+<p>Opacity 1 (default)</p>
+</div>
+</body>
+</html>
